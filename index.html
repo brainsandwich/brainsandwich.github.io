@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        /* @import url('/fonts/mainframe-spore.ttf'); */
+        @import url('/fonts/Golden Girdle.ttf');
+
+        * {
+            font-family: 'Space Mono', monospace;
+            padding: 0;
+            margin: 0;
+            font-size: small;
+        }
+
+        html,
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: calc(100% - 332px);
+            max-width: 1000px;
+        }
+
+        footer,
+        section {
+            padding: 16px;
+            gap: 64px;
+        }
+
+        footer {
+            background-color: rgb(30, 30, 30);
+            display: flex;
+            justify-content: center;
+        }
+        footer > *:nth-child(2) {
+            flex: 1;
+        }
+
+        section h1::before {
+            content: '_ ';
+            font-weight: bold;
+            color: rgb(72, 255, 0);
+        }
+
+        h1 {
+            font-family: 'Golden Girdle';
+            font-size: x-large;
+            font-style: italic;
+            color: rgb(72, 255, 0);
+            margin-bottom: 32px;
+        }
+
+        .interactible,
+        .interacted {
+            cursor: pointer;
+            display: inline;
+            text-decoration: unset;
+            font-style: none;
+            font-weight: bold;
+            color: unset;
+        }
+
+        .interactible:hover {
+            background-color: rgb(72, 255, 0);
+            color: black;
+        }
+
+        .interacted {
+            background-color: rgb(72, 255, 0);
+            color: black;
+        }
+
+        a {
+            text-decoration: unset;
+            font-style: none;
+            font-weight: bold;
+            color: unset;
+        }
+
+        a:hover {
+            background-color: rgb(72, 255, 0);
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+            list-style-position: outside;
+        }
+        li > div {
+            display: inline;
+        }
+
+        span+span::before,
+        span+div::before,
+        div+span::before {
+            content: ' / ';
+            font-weight: bold;
+            color: rgb(72, 255, 0);
+        }
+
+        span:nth-child(1) {
+            font-style: italic;
+            color: rgb(72, 255, 0);
+        }
+
+        span:nth-child(2) {
+            font-weight: bold;
+            color: rgb(173, 173, 173);
+        }
+
+        span:last-child {
+            color: unset;
+        }
+        em {
+            font-style: italic;
+        }
+
+        .details {
+            visibility: hidden;
+            background-color: black;
+            color: white;
+            width: calc(100% - 1032px);
+            max-width: 700px;
+            min-width: 300px;
+            position: fixed;
+            /* left: 128px; */
+            top: 32px;
+            right: 32px;
+            border: 3px rgb(72, 255, 0) solid;
+        }
+        .details.music {
+            width: 300px;
+        }
+
+        .details>img {
+            width: 100%;
+        }
+
+        .details>div,
+        .details>ul {
+            font-style: unset !important;
+            font-weight: unset !important;
+            padding: 8px;
+        }
+
+        .details ul>li::before {
+            content: '_ ';
+            font-weight: bold;
+            color: rgb(72, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class='main'>
+        <section>
+            <h1>Alexandre Beaudet</h1>
+            <p>
+                <div>
+                    <div class='interactible'>Click on *bold* stuff to get more info !</div>
+                    <div class='details'>
+                        <img src='/images/main/doigt.png' />
+                    </div>
+                </div><br/>
+
+                <div>
+                    <div class='interactible'>I'm a french developer, musician and ~graphist.</div>
+                    <div class='details'>
+                        <img src='/images/main/myself.JPG' />
+                    </div>
+                </div><br/>
+
+                As a developer I mainly do Graphics and Audio DSP programming using the C++ language,
+                OpenGL and raw buffer manipulation (that's my current full-time job). I'm also ok
+                with web development, Python scripting, and generally make anything (ie C program)
+                work anywhere (ie web, mobile devices, etc.).<br><br>
+
+                I'm also experimenting with shaders and other "artistic" compositions with code, mainly
+                using GLSL, THREE.js, html5 canvas or whatever comes to mind<br><br>
+
+                As a musician I do live sets and compositions using an eurorack modular synth, but
+                also computer stuff, with Ableton and the usual suspects.<br><br>
+
+                As a graphist I mainly do the visuals for my other projects (live gigs, applications).
+                I did draw a lot more in the past (pen & paper) but not so much now.
+            </p>
+        </section>
+
+        <section>
+            <h1>Links</h1>
+            <ul>
+                <li>
+                    <span>Instagram</span>
+                    <span>Music</span>
+                    <div>
+                        <a href="https://www.instagram.com/communique.soundsystem" target='_blank'>
+                            <span>@communique.soundsystem</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>Instagram</span>
+                    <span>Personal, Graphics</span>
+                    <div>
+                        <a href="https://www.instagram.com/alexandre________beaudet" target='_blank'>
+                            <span>@alexandre________beaudet</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>Soundcloud</span>
+                    <span>Music</span>
+                    <div>
+                        <a href="https://soundcloud.com/communique-soundsystem" target='_blank'>
+                            <span>@communiqué</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>Soundcloud</span>
+                    <span>Music, DJ</span>
+                    <div>
+                        <a href="https://soundcloud.com/communique-soundsystem" target='_blank'>
+                            <span>@DJ Beau Lex</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>Bandcamp</span>
+                    <span>Music, Albums/EPs</span>
+                    <div>
+                        <a href="https://communique.bandcamp.com/" target='_blank'>
+                            <span>@communiqué</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>Mixcloud</span>
+                    <span>Mixes</span>
+                    <div>
+                        <a href="https://www.mixcloud.com/Cubrt/" target='_blank'>
+                            <span>@Beau Lex</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Performances</h1>
+            <ul>
+                <li>
+                    <span>2023.04.19</span>
+                    <div>
+                        <div class='interactible'>Combi Bar, Rennes</div>
+                        <div class='details'>
+                            <img src='/images/main/combibar-2023.04.19.jpg' />
+                            <ul>
+                                <li>Communiqué Live</li>
+                                <li>April 4th @ CombiBar</li>
+                                <li>1h30 live</li>
+                                <li>DJ Set B2B Capon</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2022.07.??</span>
+                    <div>
+                        <div class='interactible'>Private Birthday Event, Rennes</div>
+                        <div class='details'>
+                            <img src='/images/main/birthday.gif' />
+                            <ul>
+                                <li>Communiqué Live</li>
+                                <li>1h ?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2019.12.??</span>
+                    <div>
+                        <div class='interactible'>Blockhaus DY10, Nantes</div>
+                        <div class='details'>
+                            <img src='/images/main/khaus.png' />
+                            <ul>
+                                <li>Communiqué Set'30</li>
+                                <li>30min</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2019.??.??</span>
+                    <div>
+                        <div class='interactible'>Café du Cinéma, Nantes</div>
+                        <div class='details'>
+                            <img src='/images/main/cafeducinema.jpg' />
+                            <ul>
+                                <li>Communiqué Live</li>
+                                <li>2h ?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Music</h1>
+            <ul>
+                <li>
+                    <span>2023.02</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Masters Degree 3</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=4014676809/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree-3">Masters Degree 3 by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2023.02</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Masters Degree 2</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=1514632724/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree-2">Masters Degree 2 by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2023.01</span>
+                    <span>DJ Crédit Agricole de Bretagne</span>
+                    <div>
+                        <div class='interactible'>Plinn ton Slipl</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 392px;" src="https://bandcamp.com/EmbeddedPlayer/track=2620858743/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/track/plinn-ton-slipl">Plinn ton Slipl by DJ Crédit Agricole de Bretagne</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2022.12</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>pls_signme_onUR~LABL.tar.gz</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 621px;" src="https://bandcamp.com/EmbeddedPlayer/album=1930721174/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/pls-signme-onur-labl-tar-gz">pls_signme_onUR~LABL.tar.gz by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2022.09</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Masters Degree 1</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3601618129/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree">masters degree by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2022.09</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Internal Audit</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=2198978588/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/internal-audit">Internal Audit by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2022.04</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Anti-Math, Plural(s)</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=2328348055/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/anti-math-plural-s">Anti-Math, Plural(s) by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2021.09</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Acid Pas Préparé</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 753px;" src="https://bandcamp.com/EmbeddedPlayer/album=3488186601/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/acid-pas-pr-par">Acid Pas Préparé by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2020.08</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Ok Stupid!</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=2980320070/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/ok-stupid">ok stupid! by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2020.03</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Convolutional Trinitrobenzene/Serotonin Algebra</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 637px;" src="https://bandcamp.com/EmbeddedPlayer/album=3466913178/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/convolutional-trinitrobenzene-serotonin-algebra">Convolutional Trinitrobenzene/Serotonin Algebra by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2019.10</span>
+                    <span>Communiqué</span>
+                    <div>
+                        <div class='interactible'>Explosive Devices</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 703px;" src="https://bandcamp.com/EmbeddedPlayer/album=3409806545/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/explosive-devices">Explosive Devices by communiqué</a></iframe>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Developer curriculum</h1>
+            <ul>
+                <li>
+                    <span>2021 -> Nowe</span>
+                    <div>
+                        <div class='interactible'>KaraFun, Lille</div>
+                        <div class='details'>
+                            <img src='/images/main/karafun.png' />
+                            <div>C++ Graphics Engine & DSP Developer</div>
+                            <ul>
+                                <li>C++ development</li>
+                                <li>Implemented / improved CMake build system</li>
+                                <li>Swift iOS "development" (debugging / C++ wrapping)</li>
+                                <li>Kotlin Android "development" (debugging / C++ wrapping)</li>
+                                <li>Emscripten C++ compilation</li>
+                                <li>OpenGL + GLSL shaders development</li>
+                                <li>Audio DSP drivers & code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2017 -> 2021</span>
+                    <div>
+                        <div class='interactible'>Eclat Digital, Nantes</div>
+                        <div class='details'>
+                            <img src='/images/main/eclat.jpg' />
+                            <div>C++ Path Tracing Engine Developer</div>
+                            <ul>
+                                <li>C++ development</li>
+                                <li>Qt (Widgets) UI</li>
+                                <li>Implemented CMake build system</li>
+                                <li>Path tracing</li>
+                                <li>Importance sampling</li>
+                                <li>Started a global refactor</li>
+                                <li>Python scripting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2016 -> 2017</span>
+                    <div>
+                        <div class='interactible'>Thermo Fisher Scientific (ex. FEI Company), Bordeaux</div>
+                        <div class='details'>
+                            <img src='/images/main/oi-1.png' />
+                            <img src='/images/main/oi-2.png' />
+                            <ul>
+                                <li>C++ development</li>
+                                <li>GLSL shader development</li>
+                                <li>OpenGL debugging</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2015 -> 2016</span>
+                    <div>
+                        <div class='interactible'>Eurogiciel, Nantes</div>
+                        <div class='details'>
+                            <img src='/images/main/lunettes-eurogiciel.jpg' />
+                            <div>Android Developer</div>
+                            <ul>
+                                <li>Android application development</li>
+                                <li>I remember developping an application that showed workers instructions to build a satellite</li>
+                                <li>An other one was some "sort of google glass" related</li>
+                                <li>They tried to make me do insurance database stuff</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2015 -> 2015</span>
+                    <div>
+                        <div class='interactible'>I-maginer, Nantes</div>
+                        <div class='details'>
+                            <img src='/images/main/os3d.jpg' />
+                            <div>C++ OpenGL Developer (internship, 6 months)</div>
+                            <ul>
+                                <li>Skol virtual machine, with Ogre3D engine</li>
+                                <li>A lot of VR/AR experiments</li>
+                                <li>Port of OpenSpace3D engine on Android</li>
+                                <li>CMake build system for C++<>Android interop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2014 -> 2014</span>
+                    <div>
+                        <div class='interactible'>University of Ulster, Londonderry</div>
+                        <div class='details'>
+                            <img src='/images/main/ulster.png' />
+                            <div>Unity Game Developer (internship, 3 months)</div>
+                            <ul>
+                                <li>We made a few Unity (C#) games</li>
+                                <li>Collaboration with graphists</li>
+                                <li>First days I couldn't tell if irish people said 'hello' or 'it's 13£ for the ride'</li>
+                                <li>By the end I could barter my way out of the classical morning guiness+oysters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2012 -> 2015</span>
+                    <div>
+                        <div class='interactible'>Polytech' Nantes</div>
+                        <div class='details'>
+                            <img src='/images/main/elec-1.jpg' title='I too pushed buttons on lab equipment 3 years in a row'/>
+                            <img src='/images/main/elec-grp.jpg' title='What a fancy lot'/>
+                            <img src='/images/main/elec-grp-cs.png' title='Does he look ready to earn some cash to you ?' />
+                            <div>Electronics & Digital Technologies Engineer (scholarship)</div>
+                            <ul>
+                                <li>Silicon physics</li>
+                                <li>Analog Electronics</li>
+                                <li>Microprocessors</li>
+                                <li>Embedded Programming</li>
+                                <li>Casual Programming</li>
+                                <li>Digital Signal Processing</li>
+                                <li>Network, Data Encoding</li>
+                                <li>Knob twiddling</li>
+                                <li>Alcohol</li>
+                                <li>Friendship</li>
+                                <li>Love</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2010 -> 2012</span>
+                    <div>
+                        <div class='interactible'>Lycée Lesage, Vannes</div>
+                        <div class='details'>
+                            <img src='/images/main/dorm.jpg' />
+                            <img src='/images/main/crying.jpg' />
+                            <div>CPGE Physique & Technologies (scholarship)</div>
+                            <ul>
+                                <li>Maths : linear algebra, differential equations, trigonometry, groups, matrices, ...</li>
+                                <li>Physics/Chemistry : measurements, optics, mechanic, thermodynamics</li>
+                                <li>Industrial Science : </li>
+                                <li>Getting my brain f*ked up beyond reason</li>
+                                <li>Alcohol</li>
+                                <li>Friendship</li>
+                                <li>Dorm rooms including LAN parties</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>1992 -> 2010</span>
+                    <div>
+                        <div class='interactible'>~Bretagne</div>
+                        <div class='details'>
+                            <img src='/images/main/bb.JPG' />
+                            <ul>
+                                <li>Looking for myself</li>
+                                <li>Being a big nerd but not studying at all</li>
+                                <li>Drama after-school classes</li>
+                                <li>Beach in the summer</li>
+                                <li>Computer games all the time</li>
+                                <li>Funny but outdated pre-metoo movies</li>
+                                <li>Already picky/annoying with outfits</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <span>2023</span>
+                    <div>
+                        <div class='interactible'>Dispositif</div>
+                        <div class='details'>
+                            <img src='/images/main/dispo-proj.png' />
+                            <ul>
+                                <li>Projections and lights scenography</li>
+                                <li>HTML, Javascript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span>collab <a href='https://www.instagram.com/lucieclouzt/' target='_blank'>@lucieclouzt</a></span>
+                </li>
+                <li>
+                    <span>2022</span>
+                    <div>
+                        <div class='interactible'>Unnamed software modular synth</div>
+                        <div class='details'>
+                            <ul>
+                                <li>Modular synth with node based interface</li>
+                                <li>Javascript, HTML, CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>2022</span>
+                    <div>
+                        <div class='interactible'>Modolor</div>
+                        <div class='details'>
+                            <ul>
+                                <li>Other modular synth experiment</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>202x</span>
+                    <div>
+                        <div class='interactible'>paqaj.cmake</div>
+                        <div class='details'>
+                            <ul>
+                                <li>Unified package getter for CMake</li>
+                                <li>CMake (obsolete)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>201x</span>
+                    <div>
+                        <div class='interactible'>lofx</div>
+                        <div class='details'>
+                            <ul>
+                                <li>>"lofi" OpenGL graphics wrapper</li>
+                                    <li>C++ (obsolete)</li>
+                                </ul>
+                            </div>
+                    </div>
+                </li>
+                <li>
+                    <span>201x</span>
+                    <div>
+                        <div class='interactible'>groceries</div>
+                        <div class='details'>
+                            <ul>
+                                <li>Composite-Component system (ECS but not as good haha</li>
+                                <li>C++ (obsolete)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>202x</span>
+                    <div>
+                        <div class='interactible'>various matrix math library experiments</div>
+                        <div class='details'>
+                            <div>C++ (private for now)</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Artworks</h1>
+            <ul>
+                <li>
+                    <span>2023</span>
+                    <span>Posca on paper</span>
+                    <div>
+                        <div class='interactible'>Oil love</div>
+                        <div class='details'>
+                            <img src='/images/main/pizza.jpg' />
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>2022</span>
+                    <span>Posca on paper</span>
+                    <div>
+                        <div class='interactible'>Fish fear me</div>
+                        <div class='details'>
+                            <img src='/images/main/fish.jpg' />
+                            <div>Gift to a friend</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>2021</span>
+                    <span>Acrylic on ball clay</span>
+                    <div>
+                        <div class='interactible'>Banana in racoon</div>
+                        <div class='details'>
+                            <img src='/images/main/racoon.jpg' />
+                            <div>Gift to a friend</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>2020</span>
+                    <span>Ink and colored felt pen on paper</span>
+                    <div>
+                        <div class='interactible'>Tonne</div>
+                        <div class='details'>
+                            <img src='/images/main/tonne.jpg' />
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>2018</span>
+                    <span>Posca on paper</span>
+                    <div>
+                        <div class='interactible'>Kawaï Dinosor</div>
+                        <div class='details'>
+                            <img src='/images/main/dinausor.jpg' />
+                            <div>Gift to a friend</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Playlist</h1>
+            <ul>
+                <li>
+                    <span>Ceephax Acid Crew</span>
+                    <span>Baddow Moods (2022)</span>
+                    <div>
+                        <div class='interactible'>Schteenmetz</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=1169440856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=2332746933/transparent=true/" seamless><a href="https://ceephax.bandcamp.com/album/baddow-moods">Baddow Moods de Ceephax</a></iframe>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>Aleksi Perälä</span>
+                    <span>GAIA 15 (2023)</span>
+                    <div>
+                        <div class='interactible'>FI3AC2399080</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=1892596287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1189709830/transparent=true/" seamless><a href="https://aleksiperala.bandcamp.com/album/gaia-15">GAIA 15 de Aleksi Perälä</a></iframe>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>Govlink</span>
+                    <span>Planaria (2023)</span>
+                    <div>
+                        <div class='interactible'>I Love You, I Love What We Have</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=1592006454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1623406222/transparent=true/" seamless><a href="https://normcorps.bandcamp.com/album/planaria">Planaria de Govlink</a></iframe>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>VRTLHVN</span>
+                    <span>INSOMNIA (2020)</span>
+                    <div>
+                        <div class='interactible'>Psychosis</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=3343067541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3657504566/transparent=true/" seamless><a href="https://normcorps.bandcamp.com/album/insomnia">INSOMNIA de VRTLHVN</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <span>Garum</span>
+                    <span>Garum EP (2022)</span>
+                    <div>
+                        <div class='interactible'>Pickle Eye</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=2312664777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3661607581/transparent=true/" seamless><a href="https://thetrilogytapes.bandcamp.com/album/garum-ep">Garum EP de Garum</a></iframe>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <span>Naco</span>
+                    <span>Un Untitled (2022)</span>
+                    <div>
+                        <div class='interactible'>520</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=3762289399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=61495452/transparent=true/" seamless><a href="https://koolswitchworks.bandcamp.com/album/un-untitled">Un Untitled de Naco</a></iframe>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span>Coen</span>
+                    <span>Slop, Drop &amp; Roll (2023)</span>
+                    <div>
+                        <div class='interactible'>Tama</div>
+                        <div class='details music'>
+                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=2652432413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://maloca.bandcamp.com/album/slop-drop-roll">Slop, Drop &amp; Roll de Coen</a></iframe>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <span>That's all 👋</span>
+        <span>Website made by myself with plain html5-css-js</span>
+        <span>No cookies involved !</span>
+    </footer>
+</body>
+<script>
+    let swap_interactible = (element, selected) => {
+        if (selected) {
+            element.classList.remove('interactible')
+            element.classList.add('interacted')
+        } else {
+            element.classList.add('interactible')
+            element.classList.remove('interacted')
+        }
+    }
+
+    let install_interactible_callbacks = () => {
+        const interactible_elements = document.getElementsByClassName('interactible')
+        let last_element_selected = null
+
+        for (let i = 0; i < interactible_elements.length; i++)
+        {
+            const element = interactible_elements[i]
+            element.addEventListener('click', event => {
+                if (last_element_selected)
+                    swap_interactible(last_element_selected, false)
+                swap_interactible(element, true)
+                last_element_selected = element
+            })
+        }
+    }
+
+    let install_details_callbacks = () => {
+        const details_elements = document.getElementsByClassName('details')
+        let last_element_selected = null
+
+        for (let i = 0; i < details_elements.length; i++)
+        {
+            const element = details_elements[i]
+            const parent = element.parentNode
+            parent.addEventListener('click', event => {
+                if (last_element_selected)
+                    last_element_selected.style.visibility = 'hidden'
+                element.style.visibility = 'visible'
+                last_element_selected = element
+            })
+        }
+    }
+
+    install_interactible_callbacks()
+    install_details_callbacks()
+</script>
+
+</html>
