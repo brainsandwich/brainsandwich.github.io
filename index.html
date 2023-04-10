@@ -9,6 +9,11 @@
             src: url("/fonts/Golden Girdle.otf") format("opentype");
         }
 
+
+        html {
+            text-size-adjust: 200%;
+        }
+
         * {
             font-family: 'Space Mono', monospace;
             padding: 0;
@@ -26,7 +31,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            width: calc(100% - 332px);
+            width: calc(100% - 532px);
             max-width: 1000px;
         }
 
@@ -40,6 +45,7 @@
             background-color: rgb(30, 30, 30);
             display: flex;
             justify-content: center;
+            text-align: center;
         }
         footer > *:nth-child(2) {
             flex: 1;
@@ -125,24 +131,22 @@
         }
 
         .details {
+            overflow-y: scroll;
             visibility: hidden;
             background-color: black;
             color: white;
-            width: calc(100% - 1032px);
-            max-width: 700px;
-            min-width: 300px;
+            /* width: calc(100% - 1032px); */
+            max-width: 500px;
+            /* min-width: 500px; */
             position: fixed;
-            /* left: 128px; */
             top: 32px;
             right: 32px;
+            max-height: calc(100vh - 64px);
             border: 3px rgb(72, 255, 0) solid;
         }
-        .details.music {
-            width: 300px;
-        }
 
-        .details>img {
-            width: 100%;
+        .details > * {
+            max-width: 100%;
         }
 
         .details>div,
@@ -156,6 +160,35 @@
             content: '_ ';
             font-weight: bold;
             color: rgb(72, 255, 0);
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 900px)
+        {
+            .details {
+                overflow-y: unset;
+                visibility: visible;
+                position: relative;
+                top: unset;
+                right: unset;
+                margin: 16px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 32px;
+                max-height: unset;
+            }
+
+            .details > iframe {
+                width: 100%;
+            }
+
+            .main {
+                width: unset;
+                max-width: unset;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 532px)
+        {
         }
     </style>
 </head>
@@ -342,7 +375,7 @@
                     <div>
                         <div class='interactible'>Masters Degree 3</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=4014676809/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree-3">Masters Degree 3 by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=4014676809/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree-3">Masters Degree 3 by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -352,7 +385,7 @@
                     <div>
                         <div class='interactible'>Masters Degree 2</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=1514632724/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree-2">Masters Degree 2 by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1514632724/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree-2">Masters Degree 2 by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -362,7 +395,7 @@
                     <div>
                         <div class='interactible'>Plinn ton Slipl</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 392px;" src="https://bandcamp.com/EmbeddedPlayer/track=2620858743/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/track/plinn-ton-slipl">Plinn ton Slipl by DJ Crédit Agricole de Bretagne</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/track=2620858743/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/track/plinn-ton-slipl">Plinn ton Slipl by DJ Crédit Agricole de Bretagne</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -372,7 +405,7 @@
                     <div>
                         <div class='interactible'>pls_signme_onUR~LABL.tar.gz</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 621px;" src="https://bandcamp.com/EmbeddedPlayer/album=1930721174/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/pls-signme-onur-labl-tar-gz">pls_signme_onUR~LABL.tar.gz by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1930721174/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/pls-signme-onur-labl-tar-gz">pls_signme_onUR~LABL.tar.gz by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -382,7 +415,7 @@
                     <div>
                         <div class='interactible'>Masters Degree 1</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3601618129/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree">masters degree by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3601618129/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree">masters degree by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -392,7 +425,7 @@
                     <div>
                         <div class='interactible'>Internal Audit</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=2198978588/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/internal-audit">Internal Audit by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2198978588/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/internal-audit">Internal Audit by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -402,7 +435,7 @@
                     <div>
                         <div class='interactible'>Anti-Math, Plural(s)</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=2328348055/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/anti-math-plural-s">Anti-Math, Plural(s) by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2328348055/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/anti-math-plural-s">Anti-Math, Plural(s) by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -412,7 +445,7 @@
                     <div>
                         <div class='interactible'>Acid Pas Préparé</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 753px;" src="https://bandcamp.com/EmbeddedPlayer/album=3488186601/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/acid-pas-pr-par">Acid Pas Préparé by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3488186601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/acid-pas-pr-par">Acid Pas Préparé by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -422,7 +455,7 @@
                     <div>
                         <div class='interactible'>Ok Stupid!</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=2980320070/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/ok-stupid">ok stupid! by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2980320070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/ok-stupid">ok stupid! by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -432,7 +465,7 @@
                     <div>
                         <div class='interactible'>Convolutional Trinitrobenzene/Serotonin Algebra</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 637px;" src="https://bandcamp.com/EmbeddedPlayer/album=3466913178/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/convolutional-trinitrobenzene-serotonin-algebra">Convolutional Trinitrobenzene/Serotonin Algebra by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3466913178/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/convolutional-trinitrobenzene-serotonin-algebra">Convolutional Trinitrobenzene/Serotonin Algebra by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -442,7 +475,7 @@
                     <div>
                         <div class='interactible'>Explosive Devices</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 703px;" src="https://bandcamp.com/EmbeddedPlayer/album=3409806545/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/explosive-devices">Explosive Devices by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3409806545/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/explosive-devices">Explosive Devices by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -780,7 +813,7 @@
                     <div>
                         <div class='interactible'>Schteenmetz</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=1169440856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=2332746933/transparent=true/" seamless><a href="https://ceephax.bandcamp.com/album/baddow-moods">Baddow Moods de Ceephax</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1169440856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=2332746933/transparent=true/" seamless><a href="https://ceephax.bandcamp.com/album/baddow-moods">Baddow Moods de Ceephax</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -791,7 +824,7 @@
                     <div>
                         <div class='interactible'>FI3AC2399080</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=1892596287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1189709830/transparent=true/" seamless><a href="https://aleksiperala.bandcamp.com/album/gaia-15">GAIA 15 de Aleksi Perälä</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1892596287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1189709830/transparent=true/" seamless><a href="https://aleksiperala.bandcamp.com/album/gaia-15">GAIA 15 de Aleksi Perälä</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -802,7 +835,7 @@
                     <div>
                         <div class='interactible'>I Love You, I Love What We Have</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=1592006454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1623406222/transparent=true/" seamless><a href="https://normcorps.bandcamp.com/album/planaria">Planaria de Govlink</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1592006454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1623406222/transparent=true/" seamless><a href="https://normcorps.bandcamp.com/album/planaria">Planaria de Govlink</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -813,7 +846,7 @@
                     <div>
                         <div class='interactible'>Psychosis</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=3343067541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3657504566/transparent=true/" seamless><a href="https://normcorps.bandcamp.com/album/insomnia">INSOMNIA de VRTLHVN</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3343067541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3657504566/transparent=true/" seamless><a href="https://normcorps.bandcamp.com/album/insomnia">INSOMNIA de VRTLHVN</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -824,7 +857,7 @@
                     <div>
                         <div class='interactible'>Pickle Eye</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=2312664777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3661607581/transparent=true/" seamless><a href="https://thetrilogytapes.bandcamp.com/album/garum-ep">Garum EP de Garum</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2312664777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3661607581/transparent=true/" seamless><a href="https://thetrilogytapes.bandcamp.com/album/garum-ep">Garum EP de Garum</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -835,7 +868,7 @@
                     <div>
                         <div class='interactible'>520</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=3762289399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=61495452/transparent=true/" seamless><a href="https://koolswitchworks.bandcamp.com/album/un-untitled">Un Untitled de Naco</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3762289399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=61495452/transparent=true/" seamless><a href="https://koolswitchworks.bandcamp.com/album/un-untitled">Un Untitled de Naco</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -846,7 +879,7 @@
                     <div>
                         <div class='interactible'>Tama</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 300px; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=2652432413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://maloca.bandcamp.com/album/slop-drop-roll">Slop, Drop &amp; Roll de Coen</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2652432413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://maloca.bandcamp.com/album/slop-drop-roll">Slop, Drop &amp; Roll de Coen</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -855,9 +888,9 @@
     </div>
 
     <footer>
-        <span>That's all 👋</span>
-        <span>Website made by myself with plain html5-css-js</span>
-        <span>No cookies involved !</span>
+        <div>That's all 👋</div>
+        <div>Website made by myself with plain html5-css-js</div>
+        <div>No cookies involved !</div>
     </footer>
 </body>
 <script>
