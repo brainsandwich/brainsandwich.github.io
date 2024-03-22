@@ -4,6 +4,7 @@
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
         @font-face {
             font-family: 'Golden Girdle';
             src: url("/fonts/Golden Girdle.otf") format("opentype");
@@ -47,7 +48,8 @@
             justify-content: center;
             text-align: center;
         }
-        footer > *:nth-child(2) {
+
+        footer>*:nth-child(2) {
             flex: 1;
         }
 
@@ -101,7 +103,8 @@
             list-style: none;
             list-style-position: outside;
         }
-        li > div {
+
+        li>div {
             display: inline;
         }
 
@@ -126,6 +129,7 @@
         span:last-child {
             color: unset;
         }
+
         em {
             font-style: italic;
         }
@@ -145,7 +149,7 @@
             border: 3px rgb(72, 255, 0) solid;
         }
 
-        .details > * {
+        .details>* {
             max-width: 100%;
         }
 
@@ -162,12 +166,11 @@
             color: rgb(72, 255, 0);
         }
 
-        @media screen and (orientation: portrait) and (max-width: 1200px)
-        {
+        @media screen and (orientation: portrait) and (max-width: 1200px) {
             span {
                 display: block;
             }
-            
+
             .details {
                 overflow-y: unset;
                 visibility: visible !important;
@@ -181,7 +184,7 @@
                 max-height: unset;
             }
 
-            .details > iframe {
+            .details>iframe {
                 width: 100%;
             }
 
@@ -194,37 +197,37 @@
 </head>
 
 <body>
-    <div class='main'>        
+    <div class='main'>
         <section>
             <h1>Alexandre Beaudet</h1>
             <p>
-                <div>
-                    <div class='interactible'>Click on *bold* stuff to get more info !</div>
-                    <div class='details'>
-                        <img src='/images/doigt.png' />
-                    </div>
-                </div><br/>
+            <div>
+                <div class='interactible'>Click on *bold* stuff to get more info !</div>
+                <div class='details'>
+                    <img src='/images/doigt.png' />
+                </div>
+            </div><br />
 
-                <div>
-                    <div class='interactible'>I'm a french developer, musician and ~graphist.</div>
-                    <div class='details'>
-                        <img src='/images/myself.JPG' />
-                    </div>
-                </div><br/>
+            <div>
+                <div class='interactible'>I'm a french developer, musician and ~graphist.</div>
+                <div class='details'>
+                    <img src='/images/myself.JPG' />
+                </div>
+            </div><br />
 
-                As a developer I mainly do Graphics and Audio DSP programming using the C++ language,
-                OpenGL and raw buffer manipulation (that's my current full-time job). I'm also ok
-                with web development, Python scripting, and generally make anything (ie C program)
-                work anywhere (ie web, mobile devices, etc.).<br><br>
+            As a developer I mainly do Graphics and Audio DSP programming using the C++ language,
+            OpenGL and raw buffer manipulation (that's my current full-time job). I'm also ok
+            with web development, Python scripting, and generally make anything (ie C program)
+            work anywhere (ie web, mobile devices, etc.).<br><br>
 
-                I'm also experimenting with shaders and other "artistic" compositions with code, mainly
-                using GLSL, THREE.js, html5 canvas or whatever comes to mind<br><br>
+            I'm also experimenting with shaders and other "artistic" compositions with code, mainly
+            using GLSL, THREE.js, html5 canvas or whatever comes to mind<br><br>
 
-                As a musician I do live sets and compositions using an eurorack modular synth, but
-                also computer stuff, with Ableton and the usual suspects.<br><br>
+            As a musician I do live sets and compositions using an eurorack modular synth, but
+            also computer stuff, with Ableton and the usual suspects.<br><br>
 
-                As a graphist I mainly do the visuals for my other projects (live gigs, applications).
-                I did draw a lot more in the past (pen & paper) but not so much now.
+            As a graphist I mainly do the visuals for my other projects (live gigs, applications).
+            I did draw a lot more in the past (pen & paper) but not so much now.
             </p>
         </section>
 
@@ -253,9 +256,9 @@
 
             <p>
                 _ I'll be mixing tchoons at Alex's Tavern in Rennes the next 8 March !
-                Come by :) There might be some borderline 170bpm tracks inside 😎 
+                Come by :) There might be some borderline 170bpm tracks inside 😎
             </p></br>
-            
+
             <p>
                 _ I've made a new EP ! It's called SINE and it's made using mostly pure sinewaves.
                 I'm quite proud of it, mostly the overall coherence and artistic/technical intent.
@@ -373,7 +376,7 @@
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023.12.07</span>
                     <div>
@@ -389,14 +392,17 @@
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023.04.19</span>
                     <div>
                         <div class='interactible'>Combi Bar, Rennes</div>
                         <div class='details'>
                             <img src='/images/combibar-2023.04.19.jpg' />
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ECEriv6ZtPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ECEriv6ZtPk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                             <ul>
                                 <li>Communiqué Live</li>
                                 <li>April 19th @ CombiBar</li>
@@ -457,7 +463,10 @@
                     <div>
                         <div class='interactible'>SINE</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2400094874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/sine">SINE by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=2400094874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/sine">SINE by
+                                    communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -467,7 +476,14 @@
                     <div>
                         <div class='interactible'>PSone</div>
                         <div class='details music'>
-                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1734187194&color=%48ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/alexandrebeaudet" title="Alexandre Beaudet" target="_blank" style="color: #cccccc; text-decoration: none;">Alexandre Beaudet</a> · <a href="https://soundcloud.com/alexandrebeaudet/psone" title="PSone" target="_blank" style="color: #cccccc; text-decoration: none;">PSone</a></div>
+                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1734187194&color=%48ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div
+                                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                <a href="https://soundcloud.com/alexandrebeaudet" title="Alexandre Beaudet"
+                                    target="_blank" style="color: #cccccc; text-decoration: none;">Alexandre Beaudet</a>
+                                · <a href="https://soundcloud.com/alexandrebeaudet/psone" title="PSone" target="_blank"
+                                    style="color: #cccccc; text-decoration: none;">PSone</a></div>
                         </div>
                     </div>
                 </li>
@@ -477,7 +493,10 @@
                     <div>
                         <div class='interactible'>Masters Degree 3</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=4014676809/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree-3">Masters Degree 3 by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=4014676809/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/masters-degree-3">Masters Degree
+                                    3 by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -487,7 +506,10 @@
                     <div>
                         <div class='interactible'>Masters Degree 2</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1514632724/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree-2">Masters Degree 2 by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=1514632724/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/masters-degree-2">Masters Degree
+                                    2 by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -497,7 +519,10 @@
                     <div>
                         <div class='interactible'>Plinn ton Slipl</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/track=2620858743/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/track/plinn-ton-slipl">Plinn ton Slipl by DJ Crédit Agricole de Bretagne</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/track=2620858743/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/track/plinn-ton-slipl">Plinn ton Slipl
+                                    by DJ Crédit Agricole de Bretagne</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -507,7 +532,11 @@
                     <div>
                         <div class='interactible'>pls_signme_onUR~LABL.tar.gz</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1930721174/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/pls-signme-onur-labl-tar-gz">pls_signme_onUR~LABL.tar.gz by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=1930721174/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a
+                                    href="https://communique.bandcamp.com/album/pls-signme-onur-labl-tar-gz">pls_signme_onUR~LABL.tar.gz
+                                    by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -517,7 +546,10 @@
                     <div>
                         <div class='interactible'>Masters Degree 1</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3601618129/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/masters-degree">masters degree by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=3601618129/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/masters-degree">masters degree
+                                    by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -527,7 +559,10 @@
                     <div>
                         <div class='interactible'>Internal Audit</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2198978588/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/internal-audit">Internal Audit by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=2198978588/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/internal-audit">Internal Audit
+                                    by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -537,7 +572,10 @@
                     <div>
                         <div class='interactible'>Anti-Math, Plural(s)</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2328348055/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/anti-math-plural-s">Anti-Math, Plural(s) by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=2328348055/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/anti-math-plural-s">Anti-Math,
+                                    Plural(s) by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -547,7 +585,10 @@
                     <div>
                         <div class='interactible'>Acid Pas Préparé</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3488186601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/acid-pas-pr-par">Acid Pas Préparé by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=3488186601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/acid-pas-pr-par">Acid Pas
+                                    Préparé by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -557,7 +598,10 @@
                     <div>
                         <div class='interactible'>Ok Stupid!</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2980320070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/ok-stupid">ok stupid! by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=2980320070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/ok-stupid">ok stupid! by
+                                    communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -567,7 +611,11 @@
                     <div>
                         <div class='interactible'>Convolutional Trinitrobenzene/Serotonin Algebra</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3466913178/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/convolutional-trinitrobenzene-serotonin-algebra">Convolutional Trinitrobenzene/Serotonin Algebra by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=3466913178/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a
+                                    href="https://communique.bandcamp.com/album/convolutional-trinitrobenzene-serotonin-algebra">Convolutional
+                                    Trinitrobenzene/Serotonin Algebra by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -577,7 +625,10 @@
                     <div>
                         <div class='interactible'>Explosive Devices</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3409806545/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://communique.bandcamp.com/album/explosive-devices">Explosive Devices by communiqué</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=3409806545/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://communique.bandcamp.com/album/explosive-devices">Explosive
+                                    Devices by communiqué</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -592,7 +643,16 @@
                     <div>
                         <div class='interactible'>MX 21/12/2023 (Techno Sensual Seduction)</div>
                         <div class='details music'>
-                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1696249245&color=%2307ff00&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/alexandrebeaudet" title="Alexandre Beaudet" target="_blank" style="color: #cccccc; text-decoration: none;">Alexandre Beaudet</a> · <a href="https://soundcloud.com/alexandrebeaudet/mx-21122023-techno-sensual-seduction" title="MX 21/12/2023 (Techno Sensual Seduction)" target="_blank" style="color: #cccccc; text-decoration: none;">MX 21/12/2023 (Techno Sensual Seduction)</a></div>
+                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1696249245&color=%2307ff00&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div
+                                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                <a href="https://soundcloud.com/alexandrebeaudet" title="Alexandre Beaudet"
+                                    target="_blank" style="color: #cccccc; text-decoration: none;">Alexandre Beaudet</a>
+                                · <a href="https://soundcloud.com/alexandrebeaudet/mx-21122023-techno-sensual-seduction"
+                                    title="MX 21/12/2023 (Techno Sensual Seduction)" target="_blank"
+                                    style="color: #cccccc; text-decoration: none;">MX 21/12/2023 (Techno Sensual
+                                    Seduction)</a></div>
                         </div>
                     </div>
                 </li>
@@ -601,7 +661,15 @@
                     <div>
                         <div class='interactible'>MX 20/11/2023</div>
                         <div class='details music'>
-                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1670036118&color=%2307ff00&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/alexandrebeaudet" title="Alexandre Beaudet" target="_blank" style="color: #cccccc; text-decoration: none;">Alexandre Beaudet</a> · <a href="https://soundcloud.com/alexandrebeaudet/mx-20112023" title="MX 20/11/2023" target="_blank" style="color: #cccccc; text-decoration: none;">MX 20/11/2023</a></div>
+                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1670036118&color=%2307ff00&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div
+                                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                <a href="https://soundcloud.com/alexandrebeaudet" title="Alexandre Beaudet"
+                                    target="_blank" style="color: #cccccc; text-decoration: none;">Alexandre Beaudet</a>
+                                · <a href="https://soundcloud.com/alexandrebeaudet/mx-20112023" title="MX 20/11/2023"
+                                    target="_blank" style="color: #cccccc; text-decoration: none;">MX 20/11/2023</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -610,7 +678,16 @@
                     <div>
                         <div class='interactible'>Alexis Perälä ambient mix for ISS on Prun Radio, 17/11/2023</div>
                         <div class='details music'>
-                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1647768885&color=%2307ff00&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/alexandrebeaudet" title="Alexandre Beaudet" target="_blank" style="color: #cccccc; text-decoration: none;">Alexandre Beaudet</a> · <a href="https://soundcloud.com/alexandrebeaudet/apmuzik-issmix" title="Alexis Perälä ambient mix for ISS on Prun Radio, 17/11/2023" target="_blank" style="color: #cccccc; text-decoration: none;">Alexis Perälä ambient mix for ISS on Prun Radio, 17/11/2023</a></div>
+                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1647768885&color=%2307ff00&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div
+                                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                <a href="https://soundcloud.com/alexandrebeaudet" title="Alexandre Beaudet"
+                                    target="_blank" style="color: #cccccc; text-decoration: none;">Alexandre Beaudet</a>
+                                · <a href="https://soundcloud.com/alexandrebeaudet/apmuzik-issmix"
+                                    title="Alexis Perälä ambient mix for ISS on Prun Radio, 17/11/2023" target="_blank"
+                                    style="color: #cccccc; text-decoration: none;">Alexis Perälä ambient mix for ISS on
+                                    Prun Radio, 17/11/2023</a></div>
                         </div>
                     </div>
                 </li>
@@ -682,7 +759,8 @@
                             <div>Android Developer</div>
                             <ul>
                                 <li>Android application development</li>
-                                <li>I remember developping an application that showed workers instructions to build a satellite</li>
+                                <li>I remember developping an application that showed workers instructions to build a
+                                    satellite</li>
                                 <li>An other one was some "sort of google glass" related</li>
                                 <li>They tried to make me do insurance database stuff</li>
                             </ul>
@@ -715,7 +793,8 @@
                             <ul>
                                 <li>We made a few Unity (C#) games</li>
                                 <li>Collaboration with graphists</li>
-                                <li>First days I couldn't tell if irish people said 'hello' or 'it's 13£ for the ride'</li>
+                                <li>First days I couldn't tell if irish people said 'hello' or 'it's 13£ for the ride'
+                                </li>
                                 <li>By the end I could barter my way out of the classical morning guiness+oysters</li>
                             </ul>
                         </div>
@@ -726,8 +805,9 @@
                     <div>
                         <div class='interactible'>Polytech' Nantes</div>
                         <div class='details'>
-                            <img src='/images/elec-1.jpg' title='I too pushed buttons on lab equipment 3 years in a row'/>
-                            <img src='/images/elec-grp.jpg' title='What a fancy lot'/>
+                            <img src='/images/elec-1.jpg'
+                                title='I too pushed buttons on lab equipment 3 years in a row' />
+                            <img src='/images/elec-grp.jpg' title='What a fancy lot' />
                             <img src='/images/elec-grp-cs.png' title='Does he look ready to earn some cash to you ?' />
                             <div>Electronics & Digital Technologies Engineer (scholarship)</div>
                             <ul>
@@ -755,7 +835,8 @@
                             <img src='/images/crying.jpg' />
                             <div>CPGE Physique & Technologies (scholarship)</div>
                             <ul>
-                                <li>Maths : linear algebra, differential equations, trigonometry, groups, matrices, ...</li>
+                                <li>Maths : linear algebra, differential equations, trigonometry, groups, matrices, ...
+                                </li>
                                 <li>Physics/Chemistry : measurements, optics, mechanic, thermodynamics</li>
                                 <li>Industrial Science : </li>
                                 <li>Getting my brain f*ked up beyond reason</li>
@@ -786,7 +867,7 @@
                 </li>
             </ul>
         </section>
-    
+
         <section>
             <h1>Radio</h1>
             <ul>
@@ -799,10 +880,13 @@
                             <img src='/images/mvmtdf.jpg' />
                             <ul>
                                 <li>Co-animator</li>
-                                <li>A show where we interview musicians, producers, venue owners, ... about their live show experiences</li>
-                                <li>It's both about them as actors and spectators of the local live scene around Nantes</li>
+                                <li>A show where we interview musicians, producers, venue owners, ... about their live
+                                    show experiences</li>
+                                <li>It's both about them as actors and spectators of the local live scene around Nantes
+                                </li>
                                 <li>Aired live every tuesday (almost), from 7 to 8 PM</li>
-                                <li><a href='https://www.prun.net/emission/b26e-mouvement-de-foule' target='_blank'>Podcast</a></li>
+                                <li><a href='https://www.prun.net/emission/b26e-mouvement-de-foule'
+                                        target='_blank'>Podcast</a></li>
                             </ul>
                         </div>
                     </div>
@@ -901,9 +985,9 @@
                         <div class='details'>
                             <ul>
                                 <li>>"lofi" OpenGL graphics wrapper</li>
-                                    <li>C++ (obsolete)</li>
-                                </ul>
-                            </div>
+                                <li>C++ (obsolete)</li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -929,7 +1013,7 @@
                 </li>
             </ul>
         </section>
-    
+
         <section>
             <h1>Shaders</h1>
             <ul>
@@ -938,37 +1022,45 @@
                     <div>
                         <div class='interactible'>Wobble Hypno Spiral</div>
                         <div class='details'>
-                            <iframe width="500" height="500" frameborder="0" src="https://www.shadertoy.com/embed/ctS3W1?gui=true&t=10&paused=true&muted=true" allowfullscreen></iframe>
+                            <iframe width="500" height="500" frameborder="0"
+                                src="https://www.shadertoy.com/embed/ctS3W1?gui=true&t=10&paused=true&muted=true"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>Geometric</span>
                     <div>
                         <div class='interactible'>Flying Butter Noodles</div>
                         <div class='details'>
-                            <iframe width="500" height="500" frameborder="0" src="https://www.shadertoy.com/embed/mljGDD?gui=true&t=10&paused=true&muted=true" allowfullscreen></iframe>
+                            <iframe width="500" height="500" frameborder="0"
+                                src="https://www.shadertoy.com/embed/mljGDD?gui=true&t=10&paused=true&muted=true"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>Geometric</span>
                     <div>
                         <div class='interactible'>Flying Butter Boxes</div>
                         <div class='details'>
-                            <iframe width="500" height="500" frameborder="0" src="https://www.shadertoy.com/embed/dljGDD?gui=true&t=10&paused=true&muted=true" allowfullscreen></iframe>
+                            <iframe width="500" height="500" frameborder="0"
+                                src="https://www.shadertoy.com/embed/dljGDD?gui=true&t=10&paused=true&muted=true"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>Camera Effect</span>
                     <div>
                         <div class='interactible'>Camfeedback Stuff</div>
                         <div class='details'>
-                            <iframe width="500" height="500" frameborder="0" src="https://www.shadertoy.com/embed/ml23Wt?gui=true&t=10&paused=true&muted=true" allowfullscreen></iframe>
+                            <iframe width="500" height="500" frameborder="0"
+                                src="https://www.shadertoy.com/embed/ml23Wt?gui=true&t=10&paused=true&muted=true"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </li>
@@ -1047,7 +1139,10 @@
                     <div>
                         <div class='interactible'>Schteenmetz</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1169440856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=2332746933/transparent=true/" seamless><a href="https://ceephax.bandcamp.com/album/baddow-moods">Baddow Moods de Ceephax</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=1169440856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=2332746933/transparent=true/"
+                                seamless><a href="https://ceephax.bandcamp.com/album/baddow-moods">Baddow Moods de
+                                    Ceephax</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -1058,7 +1153,10 @@
                     <div>
                         <div class='interactible'>FI3AC2399080</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1892596287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1189709830/transparent=true/" seamless><a href="https://aleksiperala.bandcamp.com/album/gaia-15">GAIA 15 de Aleksi Perälä</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=1892596287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1189709830/transparent=true/"
+                                seamless><a href="https://aleksiperala.bandcamp.com/album/gaia-15">GAIA 15 de Aleksi
+                                    Perälä</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -1069,7 +1167,10 @@
                     <div>
                         <div class='interactible'>I Love You, I Love What We Have</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=1592006454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1623406222/transparent=true/" seamless><a href="https://normcorps.bandcamp.com/album/planaria">Planaria de Govlink</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=1592006454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1623406222/transparent=true/"
+                                seamless><a href="https://normcorps.bandcamp.com/album/planaria">Planaria de
+                                    Govlink</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -1080,29 +1181,38 @@
                     <div>
                         <div class='interactible'>Psychosis</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3343067541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3657504566/transparent=true/" seamless><a href="https://normcorps.bandcamp.com/album/insomnia">INSOMNIA de VRTLHVN</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=3343067541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3657504566/transparent=true/"
+                                seamless><a href="https://normcorps.bandcamp.com/album/insomnia">INSOMNIA de
+                                    VRTLHVN</a></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>Garum</span>
                     <span>Garum EP (2022)</span>
                     <div>
                         <div class='interactible'>Pickle Eye</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2312664777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3661607581/transparent=true/" seamless><a href="https://thetrilogytapes.bandcamp.com/album/garum-ep">Garum EP de Garum</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=2312664777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3661607581/transparent=true/"
+                                seamless><a href="https://thetrilogytapes.bandcamp.com/album/garum-ep">Garum EP de
+                                    Garum</a></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>Naco</span>
                     <span>Un Untitled (2022)</span>
                     <div>
                         <div class='interactible'>520</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=3762289399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=61495452/transparent=true/" seamless><a href="https://koolswitchworks.bandcamp.com/album/un-untitled">Un Untitled de Naco</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=3762289399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=61495452/transparent=true/"
+                                seamless><a href="https://koolswitchworks.bandcamp.com/album/un-untitled">Un Untitled de
+                                    Naco</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -1113,7 +1223,10 @@
                     <div>
                         <div class='interactible'>Tama</div>
                         <div class='details music'>
-                            <iframe style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2652432413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://maloca.bandcamp.com/album/slop-drop-roll">Slop, Drop &amp; Roll de Coen</a></iframe>
+                            <iframe style="border: 0; width: 500px; height: 500px;"
+                                src="https://bandcamp.com/EmbeddedPlayer/album=2652432413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                                seamless><a href="https://maloca.bandcamp.com/album/slop-drop-roll">Slop, Drop &amp;
+                                    Roll de Coen</a></iframe>
                         </div>
                     </div>
                 </li>
@@ -1123,687 +1236,756 @@
         <section>
             <h1>BS Mixtapes</h1>
             <p>
-                I'm making these playlists on youtube for myself every month. There's no theme except when specified (rarely)
+                I'm making these playlists on youtube for myself every month. There's no theme except when specified
+                (rarely)
                 BS stands for 'BrainSandwich', another olde alias of meself
             </p>
-            <br/>
+            <br />
             <ul>
                 <li>
                     <span>2024</span>
                     <div>
                         <div class='interactible'>BS Mixtape #68</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ctm5RB6cqFbSMcc8AdQuP4" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ctm5RB6cqFbSMcc8AdQuP4"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2024</span>
                     <div>
                         <div class='interactible'>BS Mixtape #67</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e6BZLlwc5x6XGB17i5ciL1" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e6BZLlwc5x6XGB17i5ciL1"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #66</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dbJNw59hbVH-wgdJgZEuAh" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dbJNw59hbVH-wgdJgZEuAh"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #65</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fLHVIUdvOZdysDk4TsJQc2" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fLHVIUdvOZdysDk4TsJQc2"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #64</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07edL4kRu5QZ3C9BLlqsNmms" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07edL4kRu5QZ3C9BLlqsNmms"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #63</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cCLrLC6ekdWzFqApqAFWkd" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cCLrLC6ekdWzFqApqAFWkd"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #62</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ftqQqCoY8bsffuYvxIMeS2" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ftqQqCoY8bsffuYvxIMeS2"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #61</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e-NfcX5ma5ZvSqoKAD9MOM" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e-NfcX5ma5ZvSqoKAD9MOM"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #60</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e6g4uU0rimSNSOgMY5CPNz" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e6g4uU0rimSNSOgMY5CPNz"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #59</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dSGFucmAUM2_7HZKRkh_Ws" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dSGFucmAUM2_7HZKRkh_Ws"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #58</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cNoma9pu0HGXxfHoUll8tu" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cNoma9pu0HGXxfHoUll8tu"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #57</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fekVZI_JTis7E09z7Qbs90" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fekVZI_JTis7E09z7Qbs90"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #56</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07exUuIIx2XmJgVTaJ6qvfJr" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07exUuIIx2XmJgVTaJ6qvfJr"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2023</span>
                     <div>
                         <div class='interactible'>BS Mixtape #55</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07faz21VazkZe2Jja9oN_dHI" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07faz21VazkZe2Jja9oN_dHI"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #54</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07c9GuNoByCOgyMAPCY_bCKB" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07c9GuNoByCOgyMAPCY_bCKB"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #53</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fYSIBqPhcMAig7NRtG38rq" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fYSIBqPhcMAig7NRtG38rq"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #52</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fLmKPL9zYLQgu4mdk-AiqP" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fLmKPL9zYLQgu4mdk-AiqP"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #51</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fgGm74wmep9kWRsEn32Ocj" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fgGm74wmep9kWRsEn32Ocj"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #50</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fDabDlY2rhewUWnBvAgk-2" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fDabDlY2rhewUWnBvAgk-2"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #49</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dlneF3bqTXSbYiPKsQowhu" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dlneF3bqTXSbYiPKsQowhu"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #48</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cLsAVggFH65aMjq3vsGoPN" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cLsAVggFH65aMjq3vsGoPN"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #47</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ePPcUpee4X3e5eJ8GLdQ5v" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ePPcUpee4X3e5eJ8GLdQ5v"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #46</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fkUS8qRHdz3RfdIx3aNJNN" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fkUS8qRHdz3RfdIx3aNJNN"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #45</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fwR4XzOKaHNvR8g5Uhv6gv" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fwR4XzOKaHNvR8g5Uhv6gv"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #44</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dUM9silouUgkZDiICW9q-k" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dUM9silouUgkZDiICW9q-k"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #43</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07c3bz-D-VjoUVJ-slnyDtcv" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07c3bz-D-VjoUVJ-slnyDtcv"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2022</span>
                     <div>
                         <div class='interactible'>BS Mixtape #42</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fw0wkcCm4-5Hf0P759IQpq" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fw0wkcCm4-5Hf0P759IQpq"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #41</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fs1tacNOX0L9vc2eAoBNLq" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fs1tacNOX0L9vc2eAoBNLq"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #40</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dtwDvJifdhb4d0ubXLWmXN" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dtwDvJifdhb4d0ubXLWmXN"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #39</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fBJ6b8IIQSCXNONcbYaUcO" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fBJ6b8IIQSCXNONcbYaUcO"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #38</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fs712XIOP_TAuOSiDPRTqk" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fs712XIOP_TAuOSiDPRTqk"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #37</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cXS69jmWDokbBLaYo6L8x-" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cXS69jmWDokbBLaYo6L8x-"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #36</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cYz-VEU6f-zEPGDLpX91yX" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cYz-VEU6f-zEPGDLpX91yX"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #35</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cp7TgWsU50uU90WAqihNFV" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cp7TgWsU50uU90WAqihNFV"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #34</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cLXn1dL8IxrKcHywfpZ7jk" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cLXn1dL8IxrKcHywfpZ7jk"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #33</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07d9eVyWqgZ-70NOUJ1pGN9U" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07d9eVyWqgZ-70NOUJ1pGN9U"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #32</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07c267ko_RzRJ0Kbl8qWlWDu" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07c267ko_RzRJ0Kbl8qWlWDu"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #31</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f7Gg2kYaDUyg10oDxDnA46" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f7Gg2kYaDUyg10oDxDnA46"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #30</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f_1zODqNK5wFztcXVdU_Gk" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f_1zODqNK5wFztcXVdU_Gk"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2021</span>
                     <div>
                         <div class='interactible'>BS Mixtape #29</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f8d5xXbB8WyAVFcU-hYV1d" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f8d5xXbB8WyAVFcU-hYV1d"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #28</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fBBjrovkp9dsequ6Qz1lsI" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fBBjrovkp9dsequ6Qz1lsI"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #27</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fINSw4lz0TJ2c1SwGwEOcb" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fINSw4lz0TJ2c1SwGwEOcb"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #26</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ca5vL89Fiqk5C9kt_itX3l" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ca5vL89Fiqk5C9kt_itX3l"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #25</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07d7i9EwRLHL7CECRSyJwEjt" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07d7i9EwRLHL7CECRSyJwEjt"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #24</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07eQhUhPdSon-pdc4LHkm4uz" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07eQhUhPdSon-pdc4LHkm4uz"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #23</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cogYxJba2w-B6yAXc-esvd" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cogYxJba2w-B6yAXc-esvd"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #22</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dEEkUiX0xRQwouWdgpkct-" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dEEkUiX0xRQwouWdgpkct-"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #21 (BOUNCE special)</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dQGv5oCutF1gYVepOJUWTQ" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dQGv5oCutF1gYVepOJUWTQ"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #20 (2Fast4u special)</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fC4jtGOV5qmkgbGC33luYP" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fC4jtGOV5qmkgbGC33luYP"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #19</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e8Wct2JkE8k6HF0SCsgAv6" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e8Wct2JkE8k6HF0SCsgAv6"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #18</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07eS6Uu4xk2bMakCXbY5vF_z" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07eS6Uu4xk2bMakCXbY5vF_z"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #17</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dmtjZSpLBeGaIV5TQBZ6my" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dmtjZSpLBeGaIV5TQBZ6my"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2020</span>
                     <div>
                         <div class='interactible'>BS Mixtape #16</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cQ5XJBRkxsUyVxcuMLPzZI" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cQ5XJBRkxsUyVxcuMLPzZI"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #15</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07caS0ofqzB_7XGkf9xrdftO" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07caS0ofqzB_7XGkf9xrdftO"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #14</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ek8CYDj1V1jsErIooh_ahm" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ek8CYDj1V1jsErIooh_ahm"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #13</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e_nWNCa7VxykLl22WPIny-" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07e_nWNCa7VxykLl22WPIny-"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #12</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fMdRpnFyyLXkrT6ibSxZst" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fMdRpnFyyLXkrT6ibSxZst"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #11</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07eLuRTfHrP_iDWsZQC1CEeY" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07eLuRTfHrP_iDWsZQC1CEeY"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #10</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ciEz30ENEmqQ15J78FK0Fk" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07ciEz30ENEmqQ15J78FK0Fk"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #9</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f7qbvxxSxdUlRtAzsmGhvo" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f7qbvxxSxdUlRtAzsmGhvo"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #8</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fIZyuBIOkliFmD0unFVbXK" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fIZyuBIOkliFmD0unFVbXK"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #7</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fnotmeEotqy9x_MhY8DhEb" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07fnotmeEotqy9x_MhY8DhEb"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #6</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f1ze6XjdTcxqgOYCCV_yNl" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07f1ze6XjdTcxqgOYCCV_yNl"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #5</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cPJ63glKLnTqyQB3Kuqf7R" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cPJ63glKLnTqyQB3Kuqf7R"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #4</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cTAfgwP0m4eGlAof1kHCpY" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cTAfgwP0m4eGlAof1kHCpY"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2019</span>
                     <div>
                         <div class='interactible'>BS Mixtape #3</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cOhN2gUmfWgtAAVz9ysGXq" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07cOhN2gUmfWgtAAVz9ysGXq"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2018</span>
                     <div>
                         <div class='interactible'>BS Mixtape #2</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dCNznTKYh1BWwelaAfiPU9" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07dCNznTKYh1BWwelaAfiPU9"></iframe>
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <span>2018</span>
                     <div>
                         <div class='interactible'>BS Mixtape #1</div>
                         <div class='details music'>
-                            <iframe width="500" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07d9R7wiFxvTlHnppX6dz-tY" />
+                            <iframe width="500" height="500"
+                                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIfgJv0Cg07d9R7wiFxvTlHnppX6dz-tY"></iframe>
                         </div>
                     </div>
                 </li>
@@ -1832,8 +2014,7 @@
         const interactible_elements = document.getElementsByClassName('interactible')
         let last_element_selected = null
 
-        for (let i = 0; i < interactible_elements.length; i++)
-        {
+        for (let i = 0; i < interactible_elements.length; i++) {
             const element = interactible_elements[i]
             element.addEventListener('click', event => {
                 if (last_element_selected)
@@ -1848,8 +2029,7 @@
         const details_elements = document.getElementsByClassName('details')
         let last_element_selected = null
 
-        for (let i = 0; i < details_elements.length; i++)
-        {
+        for (let i = 0; i < details_elements.length; i++) {
             const element = details_elements[i]
             const parent = element.parentNode
             parent.addEventListener('click', event => {
